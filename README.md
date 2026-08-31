@@ -1,14 +1,40 @@
 # agent-os-releases
 
-Release downloads for Agent OS, a Windows desktop app for running and managing Claude Code sessions.
+<p align="center"><img src="assets/agent-os-logo.png" width="160" alt="The Agent OS emblem"></p>
+
+Release downloads for **Agent OS**, a Windows desktop workspace for people who run coding agents.
+
+If you work with Claude Code, Codex, OpenCode, Pi or Antigravity, you know the shape of the
+problem. Five terminals, each holding an agent that might be busy, might be waiting on your
+answer, or might have finished twenty minutes ago without you noticing. Agent OS puts all of
+them in one window and tells you, honestly, what each one is doing.
+
+What it gives you.
+
+- **A live dashboard.** Every coding agent session on the machine, marked by agent, shown as
+  busy, waiting or idle only when its own files prove it, with the evidence named in the
+  tooltip. A recent list shows what just ended, what it cost where the agent reports cost, and
+  a Resume button that reopens the conversation.
+- **Terminals for every agent.** Real shells and real agent tabs side by side in a resizable
+  mosaic. Spawn a Claude, Codex, OpenCode, Pi or Antigravity tab in any folder, continue that
+  folder's most recent conversation, or fork one where the CLI supports it.
+- **Runs without babysitting.** A kanban board and a quick prompt that launch headless runs on
+  any of the five agents, with each CLI's real model list, permission modes and effort levels,
+  and a budget cap where the agent reports spend. Drag a card to In Progress, press Start,
+  watch the status and the cost on the card.
+- **Your history, searchable.** Claude Code transcripts are imported into a local archive with
+  search across every conversation the CLI ever wrote, so nothing an agent said is lost.
+- **Notes where you work.** A markdown vault workspace beside the terminals, for the thinking
+  that surrounds the sessions.
+
+Everything stays on your machine. Transcripts and agent stores are read from your own disk, the
+database is local SQLite, and the one automatic network call is the update check against this
+repository, described below.
 
 This repository holds no source code. It holds the published installers, and it is public so the
-in-app updater can fetch them without a token. The application source lives in a private repository.
-The installers are free to download and use under the end-user licence in `LICENSE.md`.
-
-Agent OS is built for people who code. Several sessions across real projects, a terminal you live
-in, notes in a vault. If your coding happens mostly on camera, there is nothing here for you; no
-streamer mode, nothing that demos well, and every path in Settings is a typed text field.
+in-app updater can fetch them without a token. The application source lives in a private
+repository. The installers are free to download and use under the end-user licence in
+`LICENSE.md`.
 
 ## What each release contains
 
